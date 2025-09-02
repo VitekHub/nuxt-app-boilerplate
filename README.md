@@ -50,6 +50,8 @@ This boilerplate is ready to be customized for your specific needs. Feel free to
 - Create new pages in `/pages`
 - Customize the default layout in `/layouts/default.vue` (currently a simple single-column layout)
 - Add more components in `/components`
+- Add translations in `/i18n/locales/` (currently supports English and Czech)
+- Configure additional languages in `nuxt.config.ts` under the `i18n` section
 - Configure additional modules in `nuxt.config.ts`
 - Customize styling in `/assets/css/main.css`
 - Update the project name in `package.json` to match your application

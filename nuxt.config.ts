@@ -8,6 +8,24 @@ export default defineNuxtConfig({
     preference: 'dark',
   },
 
+  // i18n configuration
+  i18n: {
+    defaultLocale: 'en',
+    locales: [
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'cs', name: 'Čeština', file: 'cs.json' },
+    ],
+    lazy: true,
+    langDir: 'locales/',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+      fallbackLocale: 'en',
+    },
+  },
+
   // GitHub Pages configuration
   app: {
     baseURL: '/',
