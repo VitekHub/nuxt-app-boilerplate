@@ -19,7 +19,7 @@ function getLocaleFiles(locale: string): string[] {
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
-  modules: ['@nuxt/ui', '@pinia/nuxt', '@vueuse/nuxt', '@nuxtjs/i18n'],
+  modules: ['@nuxt/ui', '@nuxt/icon', '@pinia/nuxt', '@vueuse/nuxt', '@nuxtjs/i18n'],
   css: ['~/assets/css/main.css'],
   colorMode: {
     preference: 'dark',

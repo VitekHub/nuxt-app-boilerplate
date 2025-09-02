@@ -10,7 +10,10 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
-            <h3 class="font-semibold mb-2">Documentation</h3>
+            <div class="flex items-center mb-3">
+              <UIcon name="heroicons:document-text" class="w-5 h-5 text-primary-500 mr-2" />
+              <h3 class="font-semibold">Documentation</h3>
+            </div>
             <p class="text-sm text-gray-600 dark:text-gray-400">
               Learn more about Nuxt features and API.
             </p>
@@ -26,7 +29,10 @@
           </div>
 
           <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
-            <h3 class="font-semibold mb-2">Components</h3>
+            <div class="flex items-center mb-3">
+              <UIcon name="heroicons:cube" class="w-5 h-5 text-primary-500 mr-2" />
+              <h3 class="font-semibold">Components</h3>
+            </div>
             <p class="text-sm text-gray-600 dark:text-gray-400">
               Build reusable UI components with Nuxt UI.
             </p>
@@ -42,7 +48,10 @@
           </div>
 
           <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
-            <h3 class="font-semibold mb-2">Internationalization</h3>
+            <div class="flex items-center mb-3">
+              <UIcon name="heroicons:globe-alt" class="w-5 h-5 text-primary-500 mr-2" />
+              <h3 class="font-semibold">Internationalization</h3>
+            </div>
             <p class="text-sm text-gray-600 dark:text-gray-400">
               Add multi-language support with Nuxt i18n.
             </p>
@@ -58,7 +67,10 @@
           </div>
 
           <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
-            <h3 class="font-semibold mb-2">State Management</h3>
+            <div class="flex items-center mb-3">
+              <UIcon name="heroicons:circle-stack" class="w-5 h-5 text-primary-500 mr-2" />
+              <h3 class="font-semibold">State Management</h3>
+            </div>
             <p class="text-sm text-gray-600 dark:text-gray-400">Manage global state with Pinia.</p>
             <UButton
               to="https://pinia.vuejs.org/"
@@ -72,7 +84,10 @@
           </div>
 
           <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
-            <h3 class="font-semibold mb-2">TypeScript</h3>
+            <div class="flex items-center mb-3">
+              <UIcon name="heroicons:code-bracket" class="w-5 h-5 text-primary-500 mr-2" />
+              <h3 class="font-semibold">TypeScript</h3>
+            </div>
             <p class="text-sm text-gray-600 dark:text-gray-400">
               Build with full TypeScript support.
             </p>
@@ -88,7 +103,10 @@
           </div>
 
           <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
-            <h3 class="font-semibold mb-2">Tailwind CSS</h3>
+            <div class="flex items-center mb-3">
+              <UIcon name="heroicons:paint-brush" class="w-5 h-5 text-primary-500 mr-2" />
+              <h3 class="font-semibold">Tailwind CSS</h3>
+            </div>
             <p class="text-sm text-gray-600 dark:text-gray-400">
               Style your app with utility-first CSS.
             </p>
@@ -107,7 +125,13 @@
         <div
           class="mt-8 p-6 bg-primary-50 dark:bg-primary-950/20 rounded-lg border border-primary-200 dark:border-primary-800"
         >
-          <h3 class="font-semibold mb-3 text-primary-900 dark:text-primary-100">📚 Quick Links</h3>
+          <div class="flex items-center mb-3">
+            <UIcon
+              name="heroicons:bookmark"
+              class="w-5 h-5 text-primary-600 dark:text-primary-400 mr-2"
+            />
+            <h3 class="font-semibold text-primary-900 dark:text-primary-100">Quick Links</h3>
+          </div>
           <div class="flex flex-wrap gap-3">
             <UButton
               to="https://nuxt.com/docs/getting-started"
