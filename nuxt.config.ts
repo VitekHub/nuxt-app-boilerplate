@@ -52,15 +52,13 @@ export default defineNuxtConfig({
   },
 
   // Component auto-import configuration:
-  //  - Remove '~/pages' if you do not use page specific components.
   //  - Remove the whole 'components' array if you want to prefix component names by their folders (default for `pathPrefix` is true).
+  //  - In case you need page specific components inside 'pages' folder, you can add e.g. '~/pages/index/components'.
+  //     - ! Avoid adding the whole '~/pages' folder as it can cause issues e.g. when having '[slug].vue' page.
+  //  - See https://nuxt.com/docs/4.x/guide/directory-structure/app/components#component-names for details.
   components: [
     {
       path: '~/components',
-      pathPrefix: false,
-    },
-    {
-      path: '~/pages',
       pathPrefix: false,
     },
   ],
