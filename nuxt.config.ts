@@ -17,9 +17,19 @@ function getLocaleFiles(locale: string): string[] {
 }
 
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
+  compatibilityDate: '2025-07-16',
   devtools: { enabled: false },
-  modules: ['@nuxt/ui', '@nuxt/icon', '@pinia/nuxt', '@vueuse/nuxt', '@nuxtjs/i18n'],
+  modules: [
+    '@nuxt/ui',
+    '@nuxt/icon',
+    '@pinia/nuxt',
+    '@vueuse/nuxt',
+    '@nuxtjs/i18n',
+    '@nuxt/eslint',
+  ],
+  eslint: {
+    // options here
+  },
   css: ['~/assets/css/main.css'],
   colorMode: {
     preference: 'dark',
@@ -31,11 +41,13 @@ export default defineNuxtConfig({
     locales: [
       {
         code: 'en',
+        iso: 'en-US',
         name: 'English',
         files: getLocaleFiles('en'),
       },
       {
         code: 'cs',
+        iso: 'cs-CZ',
         name: 'Čeština',
         files: getLocaleFiles('cs'),
       },

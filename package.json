@@ -8,29 +8,28 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
-    "lint:check": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "@nuxt/ui": "^2.18.4",
-    "@pinia/nuxt": "^0.5.1",
-    "css-select": "^4.3.0",
-    "nuxt": "^3.16.0",
-    "date-fns": "^3.6.0",
-    "date-fns-tz": "^3.0.0",
-    "@nuxtjs/i18n": "^9.3.0"
+    "@iconify-json/lucide": "^1.2.66",
+    "@iconify-json/simple-icons": "^1.2.50",
+    "@nuxt/ui": "^3.3.3",
+    "@nuxtjs/i18n": "^10.0.6",
+    "@pinia/nuxt": "^0.11.2",
+    "@vueuse/core": "^13.9.0",
+    "@vueuse/nuxt": "^13.9.0",
+    "nuxt": "^4.1.1",
+    "pinia": "^3.0.3"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.5.7",
-    "@typescript-eslint/eslint-plugin": "^8.8.0",
-    "@typescript-eslint/parser": "^8.8.0",
-    "@vueuse/nuxt": "^10.5.0",
-    "eslint": "^9.11.1",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "prettier": "^3.3.3",
-    "typescript": "^5.6.2"
+    "@nuxt/eslint": "^1.9.0",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
   }
 }

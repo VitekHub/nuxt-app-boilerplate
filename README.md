@@ -4,7 +4,7 @@ A clean Nuxt.js boilerplate with essential tools and configurations.
 
 ## Features
 
-- ⚡ **Nuxt 3** - The latest version of Nuxt
+- ⚡ **Nuxt 4** - The latest version of Nuxt
 - 🎨 **Nuxt UI** - Beautiful, accessible components
 - 🌍 **i18n** - Internationalization support
 - 📦 **Pinia** - State management
@@ -33,25 +33,26 @@ npm run dev
 ## Project Structure
 
 ```
-├── assets/          # Uncompiled assets
-├── components/      # Vue components
-├── layouts/         # Application layouts
-├── pages/           # Application pages/routes
-├── public/          # Static files
 ├── server/          # Server-side code
-└── types/           # TypeScript type definitions
+├── public/          # Static files
+└── app/
+│   ├── assets/      # Uncompiled assets
+│   ├── components/  # Vue components
+│   ├── layouts/     # Application layouts
+│   ├── pages/       # Application pages/routes
+│   └── types/       # TypeScript type definitions
 ```
 
 ## Customization
 
 This boilerplate is ready to be customized for your specific needs. Feel free to:
 
-- Replace `/pages/index.vue` with your own home page content
-- Create new pages in `/pages`
-- Customize the default layout in `/layouts/default.vue` (currently a simple single-column layout)
-- Add more components in `/components`
+- Replace `/app/pages/index.vue` with your own home page content
+- Create new pages in `/app/pages`
+- Customize the default layout in `/app/layouts/default.vue` (currently a simple single-column layout)
+- Add more components in `/app/components`
 - Add translations in `/i18n/locales/` (currently supports English and Czech)
 - Configure additional languages in `nuxt.config.ts` under the `i18n` section
 - Configure additional modules in `nuxt.config.ts`
-- Customize styling in `/assets/css/main.css`
+- Customize styling in `/app/assets/css/main.css`
 - Update the project name in `package.json` to match your application
